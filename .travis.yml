@@ -5,16 +5,16 @@ language: go
 # updates. Any older versions be considered deprecated. Don't bother testing
 # with them.
 go:
-  - 1.x
+  - master
   
 before_install:
   - curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
   - make clean
-  
+
 install:
   - make ensure
   
-scripts:
+script:
   - make test
 
 
