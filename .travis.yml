@@ -8,7 +8,7 @@ install:
 - make ensure
 script:
 - make test
-- echo $MY_SECRET_ENV
+
 notifications:
   email: false
 env:
