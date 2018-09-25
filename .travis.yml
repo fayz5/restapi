@@ -12,8 +12,5 @@ go:
   
 before_install:
   - curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
-  - make info
-  - make clean
-install:
-  - make ensure
+install: true
 
