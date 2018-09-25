@@ -10,5 +10,10 @@ language: go
 go:
   - 1.x
   
-install: true
+before_install:
+  - curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
+  - make info
+  - make clean
+install:
+  - make ensure
 
