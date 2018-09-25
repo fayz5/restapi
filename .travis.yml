@@ -9,8 +9,11 @@ go:
   
 before_install:
   - curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
+  - make clean
+  
 install:
   - make ensure
+  
 scripts:
   - make test
 

@@ -8,4 +8,8 @@ test:
 ensure:
 	@dep ensure
 
+.PHONY: clean
+clean:
+	@rm -rf $(CURDIR)/bin
+
 
