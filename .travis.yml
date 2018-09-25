@@ -9,6 +9,6 @@ go:
   
 before_install:
   - curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
-  - go get -u github.com/gorilla/mux
+  - dep ensure
 
 
