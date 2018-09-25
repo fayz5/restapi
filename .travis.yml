@@ -9,4 +9,6 @@ language: go
 # with them.
 go:
   - 1.x
+  
+install: true
 
