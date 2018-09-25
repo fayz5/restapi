@@ -14,7 +14,7 @@ func main() {
 	r := mux.NewRouter()
 	//Register Handlers
 	r.HandleFunc("/api/message", handlers.MessageHandler)
-
+	//Log server status
 	fmt.Println("Listening on Port 8080")
 	log.Fatal(http.ListenAndServe("localhost:8080", r))
 }
