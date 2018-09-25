@@ -9,7 +9,9 @@ go:
   
 before_install:
   - curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
-  - dep init
-  - dep ensure
+install:
+  - make ensure
+scripts:
+  - make test
 
 
